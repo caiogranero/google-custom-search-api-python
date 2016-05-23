@@ -6,7 +6,7 @@
 - **The Code**
 - **Parameters**
 - **The JSON output**
-- **Docs**
+- **For more info**
 
 
 ## Install Google API
@@ -290,9 +290,7 @@ Args:
     },
   }
 
-### Docs
-
-For more info:
+## For more info:
 
 [API Documents](https://developers.google.com/resources/api-libraries/documentation/customsearch/v1/python/latest/customsearch_v1.cse.html#list)
 
