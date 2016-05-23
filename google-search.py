@@ -10,11 +10,11 @@ from googleapiclient.discovery import build
 
 def main():
   service = build("customsearch", "v1",
-            developerKey="AIzaSyDxpJfGwM9KzeTFlKa-_Z-wEgI1sKMcKKo")
+            developerKey="PUT YOUR API KEY HERE")
 
   res = service.cse().list(
-      q='it4biz', #Search words
-      cx='001132580745589424302:jbscnf14_dw',  #CSE Key
+      q='Brasil', #Search words
+      cx='PUT YOUR CSE KEY HERE',  #CSE Key
       lr='lang_pt', #Search language
     ).execute()
   pprint.pprint(res)
