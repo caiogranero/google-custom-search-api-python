@@ -1,9 +1,43 @@
 # google-custom-search-api-python
 
+```
+- Install Google API
+- The Code
+- Parameters
+- The JSON output
+- Docs
+
+```
+
 ### Install Google API
 
 ```
 $ pip install --upgrade google-api-python-client
+```
+
+## The Code
+
+```
+import pprint, json
+
+from googleapiclient.discovery import build
+
+def main():
+  service = build("customsearch", "v1",
+            developerKey="PUT YOUR API KEY HERE")
+
+  res = service.cse().list(
+      q='Brasil', #Search words
+      cx='PUT YOUR CSE KEY HERE',  #CSE Key
+      lr='lang_pt', #Search language
+    ).execute()
+  pprint.pprint(res)
+
+  with open('output.txt', 'w') as outfile:
+    json.dump(res, outfile)
+
+main()
+
 ```
 
 ### Parameters
@@ -258,35 +292,12 @@ Args:
   }
 ```
 
-## The Code
-
-```
-import pprint, json
-
-from googleapiclient.discovery import build
-
-def main():
-  service = build("customsearch", "v1",
-            developerKey="PUT YOUR API KEY HERE")
-
-  res = service.cse().list(
-      q='Brasil', #Search words
-      cx='PUT YOUR CSE KEY HERE',  #CSE Key
-      lr='lang_pt', #Search language
-    ).execute()
-  pprint.pprint(res)
-
-  with open('output.txt', 'w') as outfile:
-    json.dump(res, outfile)
-
-main()
-
-```
-
 ### Docs
 
-For more info: https://developers.google.com/resources/api-libraries/documentation/customsearch/v1/python/latest/customsearch_v1.cse.html#list
-To get yours Google APIs Key, enter: <http://code.google.com/apis/console>
-To get your Custom Search Engine Key, enter <https://cse.google.com/cse/all>
-Install API: https://developers.google.com/api-client-library/python/apis/customsearch/v1#system-requirements
-About the API: https://developers.google.com/custom-search/docs/api#overview
+######For more info:
+
+	>[API Documents](https://developers.google.com/resources/api-libraries/documentation/customsearch/v1/python/latest/customsearch_v1.cse.html#list)
+	>[Get Your Goole API Key](<http://code.google.com/apis/console>)
+	>[Get Your Custom Search Engine Key](https://cse.google.com/cse/all)
+	>[About API Install](https://developers.google.com/api-client-library/python/apis/customsearch/v1#system-requirements)
+	>[About the API](https://developers.google.com/custom-search/docs/api#overview)
