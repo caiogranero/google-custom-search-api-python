@@ -293,8 +293,8 @@ Args:
 
 For more info:
 
-[API Documents](https://developers.google.com/resources/api-libraries/documentation/customsearch/v1/python/latest/customsearch_v1.cse.html#list)
-[Get Your Goole API Key](<http://code.google.com/apis/console>)
-[Get Your Custom Search Engine Key](https://cse.google.com/cse/all)
-[About API Install](https://developers.google.com/api-client-library/python/apis/customsearch/v1#system-requirements)
-[About the API](https://developers.google.com/custom-search/docs/api#overview)
+>[API Documents](https://developers.google.com/resources/api-libraries/documentation/customsearch/v1/python/latest/customsearch_v1.cse.html#list)
+>[Get Your Goole API Key](<http://code.google.com/apis/console>)
+>[Get Your Custom Search Engine Key](https://cse.google.com/cse/all)
+>[About API Install](https://developers.google.com/api-client-library/python/apis/customsearch/v1#system-requirements)
+>[About the API](https://developers.google.com/custom-search/docs/api#overview)
