@@ -1,12 +1,12 @@
 # google-custom-search-api-python
 
-**
-- Install Google API
-- The Code
+
+- **Install Google API**
+- **The Code**
 - Parameters
 - The JSON output
 - Docs
-**
+
 
 ## Install Google API
 
