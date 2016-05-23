@@ -18,7 +18,7 @@ $ pip install --upgrade google-api-python-client
 ## The Code
 
 ```
-import pprint, json
+import json
 
 from googleapiclient.discovery import build
 
@@ -31,9 +31,8 @@ def main():
       cx='PUT YOUR CSE KEY HERE',  #CSE Key
       lr='lang_pt', #Search language
     ).execute()
-  pprint.pprint(res)
 
-  with open('output.txt', 'w') as outfile:
+  with open('output.json', 'w') as outfile:
     json.dump(res, outfile)
 
 main()
