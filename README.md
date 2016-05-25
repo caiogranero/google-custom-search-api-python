@@ -1,13 +1,15 @@
 # google-custom-search-api-python
 
-
-
+- **About**
 - **Install Google API**
 - **The Code**
 - **Parameters**
 - **The JSON output**
 - **For more info**
 
+## About
+
+This is a Python program to generate a .json file with the first 10 Google Search results about a specific word.
 
 ## Install Google API
 

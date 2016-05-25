@@ -10,15 +10,15 @@ from googleapiclient.discovery import build
 
 def main():
   service = build("customsearch", "v1",
-            developerKey="PUT YOUR API KEY HERE")
+            developerKey="AIzaSyDxpJfGwM9KzeTFlKa-_Z-wEgI1sKMcKKo")
 
   res = service.cse().list(
-      q='Brasil', #Search words
-      cx='PUT YOUR CSE KEY HERE',  #CSE Key
+      q='IT4Biz', #Search words
+      cx='001132580745589424302:jbscnf14_dw',  #CSE Key
       lr='lang_pt', #Search language
     ).execute()
 
-  with open('output.json', 'w') as outfile:
+  with open('data.json', 'w') as outfile:
     json.dump(res, outfile)
 
 main()
